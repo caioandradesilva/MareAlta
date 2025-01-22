@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maré Alta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('marealta.jpg'); /* Caminho correto para a imagem */
+            background-size: cover; /* A imagem vai cobrir toda a tela sem distorção */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* A imagem não vai se repetir */
+            background-attachment: fixed; /* Imagem fixa enquanto rola a página (parallax) */
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente para melhor leitura */
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 90%; /* Para garantir que o conteúdo não fique muito grande em telas pequenas */
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px; /* Espaçamento do título em relação à logo */
+        }
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        .whatsapp-button img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        /* Responsividade para telas pequenas */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll; /* Remove o efeito fixo em telas pequenas */
+            }
+            .container {
+                padding: 20px;
+                max-width: 95%;
+            }
+            h1 {
+                font-size: 1.5rem; /* Reduz o tamanho do título para dispositivos móveis */
+            }
+            .whatsapp-button {
+                padding: 10px 20px;
+                font-size: 14px; /* Ajusta o tamanho do botão */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo acima do título -->
+        <img src="logomare.jpg" alt="Logo Maré Alta" style="max-width: 100px;">
+        
+        <h1>Entre em Contato Conosco!</h1>
+        <p>Click no botão abaixo para nos enviar uma mensagem no WhatsApp.</p>
+        <a class="whatsapp-button" href="https://wa.me/5548984830310?text=Olá,%20vem%20através%20do%20site%20e%20gostaria%20de%20mais%20informações!" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            Enviar mensagem
+        </a>
+    </div>
+</body>
+</html>
